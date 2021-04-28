@@ -60,7 +60,6 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-        git clone https://github.com/xiaorouji/openwrt-passwall.git
 
     - name: Load custom feeds
       run: |
